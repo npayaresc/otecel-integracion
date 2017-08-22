@@ -3,15 +3,15 @@
   <folder name="Strategy" id="9ed517b2-134a-444c-a1e2-cfea5d46e894" type="strategy"/>
   <folder name="Business" id="67b0351e-5a86-47e1-befa-cd4bdf5ddc20" type="business">
     <element xsi:type="archimate:BusinessInterface" name="Business Interface" id="3b981b05-2cbd-488a-a45e-80a1cf520c57"/>
-    <element xsi:type="archimate:BusinessActor" name="Managers" id="0b376b40-d6fa-4ac7-b30c-493f879c9e10"/>
-    <element xsi:type="archimate:BusinessActor" name="Managers" id="286b9b50-1c7b-4de5-81cf-8d8c185f0f05"/>
+    <element xsi:type="archimate:BusinessActor" name="Managers, Developers" id="0b376b40-d6fa-4ac7-b30c-493f879c9e10"/>
+    <element xsi:type="archimate:BusinessActor" name="Managers, Developers" id="286b9b50-1c7b-4de5-81cf-8d8c185f0f05"/>
   </folder>
   <folder name="Application" id="47476a16-9842-4152-9df4-fdea82c63023" type="application">
     <element xsi:type="archimate:ApplicationComponent" name="SAS-SMSC Connector" id="67b35f81-4196-4508-b2e8-9aba5fc75ffc"/>
     <element xsi:type="archimate:ApplicationComponent" name="SAS-SMSC Connector" id="64897b64-c466-4d26-bf3b-9378ffb3759e"/>
     <element xsi:type="archimate:ApplicationComponent" name="Seq_ESP_to_RTDM Inbound" id="2ec0066b-a59b-4fdf-b9e9-849c82a73264"/>
     <element xsi:type="archimate:ApplicationComponent" name="Seq_Q_ESP_Inbound_to_ESP" id="ae769441-e6d6-4740-b6ce-095e41c5d2c9"/>
-    <element xsi:type="archimate:ApplicationComponent" name="Seq-Q_RTDM_Inbound_to_RTDM" id="01d01bd3-fa08-4b8a-867e-419c9b4addb5"/>
+    <element xsi:type="archimate:ApplicationComponent" name="Seq_Q_RTDM_Inbound_to_RTDM" id="01d01bd3-fa08-4b8a-867e-419c9b4addb5"/>
     <element xsi:type="archimate:ApplicationComponent" name="Seq_ESP_to_Q_SMSC_Inbound" id="be5d79de-8b9e-45f8-bcfd-68ac410ea48e"/>
     <element xsi:type="archimate:ApplicationComponent" name="Seq_Q_SMSC_Inbound_to_SMSC" id="b14ed802-67b3-4f9e-960c-697467bf7f48"/>
     <element xsi:type="archimate:ApplicationComponent" name="Seq_Q_TIAXA_Inbound_to_TIAXA" id="0ef65001-fa5b-487a-9a3d-92ba052a8ea0"/>
@@ -226,6 +226,8 @@
     <element xsi:type="archimate:RealizationRelationship" id="27703f96-72f4-4c75-b9f0-d7a5d3197882" source="d10d429a-0036-4050-9c52-fc57a86434be" target="96c36131-1dcf-483a-b5a7-bfa9184714da"/>
     <element xsi:type="archimate:FlowRelationship" name="Diferente de  *3353" id="0985f7d6-8a45-44ae-a52d-21c537dcd29e" source="fec6c185-b96c-41cb-b812-eb0d7f73ec32" target="663aae74-fc43-409e-9448-f9b21cfb9d21"/>
     <element xsi:type="archimate:TriggeringRelationship" id="ae9a5e59-8107-4550-9877-24a12d6bebd3" source="663aae74-fc43-409e-9448-f9b21cfb9d21" target="d9645ec7-be26-4d67-9028-a918c84636ca"/>
+    <element xsi:type="archimate:ServingRelationship" id="8c13d844-f331-4bb9-8763-024e4e705103" source="d9645ec7-be26-4d67-9028-a918c84636ca" target="fec6c185-b96c-41cb-b812-eb0d7f73ec32"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="be59dea4-88c2-454c-a6b8-0bd0cd85629e" source="d9645ec7-be26-4d67-9028-a918c84636ca" target="fec6c185-b96c-41cb-b812-eb0d7f73ec32"/>
   </folder>
   <folder name="Views" id="9fd95537-0d27-4359-be2f-75157441c2af" type="diagrams">
     <element xsi:type="archimate:ArchimateDiagramModel" name="Solucion1" id="a4a8e5da-08a2-4d59-a387-c1bf1a158abd">
@@ -364,8 +366,8 @@ Se deberia siempre utilziar las colas de  mensajeria para intercambio de mensaje
             <child xsi:type="archimate:DiagramObject" id="6da860ee-cd7a-4a41-8ec9-c27162dd61ed" targetConnections="c07566ee-68c6-4953-b24d-bd1bf5d67fb4 0d8904e6-12aa-4562-afd9-6f9bad31aa81" font="1|Segoe UI|9.75|1|WINDOWS|1|-13|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" fillColor="#ffffff" textPosition="2" archimateElement="b14ed802-67b3-4f9e-960c-697467bf7f48" type="1">
               <bounds x="12" y="204" width="130" height="60"/>
               <sourceConnection xsi:type="archimate:Connection" id="c95bc254-6e7f-4099-b98c-c3b69b015d04" fontColor="#ff0080" lineWidth="3" lineColor="#ff00ff" source="6da860ee-cd7a-4a41-8ec9-c27162dd61ed" target="a0d0c92b-d605-42ad-b0b9-5b9056325161" archimateRelationship="c9772e0b-bd27-4c43-a223-0444acb0e53e">
-                <bendpoint startX="-77" startY="15" endY="-301"/>
-                <bendpoint startX="-77" startY="159" endY="-157"/>
+                <bendpoint startX="-77" startY="20" endX="67" endY="-309"/>
+                <bendpoint startX="-77" startY="152" endX="67" endY="-177"/>
               </sourceConnection>
             </child>
             <child xsi:type="archimate:DiagramObject" id="20526c88-8ba3-4aad-9809-6720e2be63ca" targetConnections="689306fa-66e7-492c-9dbb-dca232a46fdb f7fc6a1f-719c-4ec1-85be-414dda7dc54f" font="1|Segoe UI|9.75|1|WINDOWS|1|-13|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" fillColor="#ffffff" textPosition="2" archimateElement="0ef65001-fa5b-487a-9a3d-92ba052a8ea0" type="1">
@@ -481,16 +483,14 @@ Se deberia siempre utilziar las colas de  mensajeria para intercambio de mensaje
             <bounds x="252" y="29" width="55" height="55"/>
           </child>
         </child>
-        <child xsi:type="archimate:DiagramObject" id="99ef33e3-8478-4dff-8dff-813aefaa729f" targetConnections="05a6e362-31ab-44c3-b32d-6bc63276ec7d b1dd8f29-4b37-4b87-a117-96b53ae9d1a0" font="1|Segoe UI|12.0|1|WINDOWS|1|-16|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" fontColor="#ffffff" textAlignment="1" fillColor="#1e9d9d" textPosition="1" archimateElement="fec6c185-b96c-41cb-b812-eb0d7f73ec32">
+        <child xsi:type="archimate:DiagramObject" id="99ef33e3-8478-4dff-8dff-813aefaa729f" targetConnections="b1dd8f29-4b37-4b87-a117-96b53ae9d1a0 12edd974-dc48-4a2f-ac2d-2884d07694cb" font="1|Segoe UI|12.0|1|WINDOWS|1|-16|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" fontColor="#ffffff" textAlignment="1" fillColor="#1e9d9d" textPosition="1" archimateElement="fec6c185-b96c-41cb-b812-eb0d7f73ec32">
           <bounds x="180" y="55" width="133" height="73"/>
           <sourceConnection xsi:type="archimate:Connection" id="57814331-8320-4254-b8c4-8b0dbb406af6" font="1|Segoe UI|9.75|3|WINDOWS|1|-13|0|0|0|700|-1|0|0|0|3|2|1|34|Segoe UI" lineWidth="3" lineColor="#ffffff" source="99ef33e3-8478-4dff-8dff-813aefaa729f" target="f038d101-9641-44c1-966a-031184ed98a0" archimateRelationship="b0e51f0c-d836-47df-842b-c1b8c96150a1"/>
           <sourceConnection xsi:type="archimate:Connection" id="7713c3cc-9a0f-43b0-852c-f17f38ab7e33" font="1|Segoe UI|14.25|3|WINDOWS|1|-19|0|0|0|700|-1|0|0|0|3|2|1|34|Segoe UI" fontColor="#400040" lineWidth="3" lineColor="#1e9d9d" source="99ef33e3-8478-4dff-8dff-813aefaa729f" target="99460a58-a622-4317-aab4-93df46055005" archimateRelationship="0985f7d6-8a45-44ae-a52d-21c537dcd29e"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="a0d0c92b-d605-42ad-b0b9-5b9056325161" targetConnections="87ca2112-9b80-4ff6-99cb-adc8d46688db c95bc254-6e7f-4099-b98c-c3b69b015d04 b3af3c38-15bc-4fe3-8c78-34ec751114c4" font="1|Segoe UI|12.0|1|WINDOWS|1|-16|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" fontColor="#ffffff" fillColor="#1e9d9d" textPosition="2" archimateElement="d9645ec7-be26-4d67-9028-a918c84636ca">
-          <bounds x="252" y="140" width="145" height="53"/>
-          <sourceConnection xsi:type="archimate:Connection" id="05a6e362-31ab-44c3-b32d-6bc63276ec7d" source="a0d0c92b-d605-42ad-b0b9-5b9056325161" target="99ef33e3-8478-4dff-8dff-813aefaa729f" archimateRelationship="256cecc7-cb1c-4b43-864d-c781f763814b">
-            <bendpoint startX="-108" startY="11" endX="-24" endY="78"/>
-          </sourceConnection>
+          <bounds x="120" y="140" width="277" height="53"/>
+          <sourceConnection xsi:type="archimate:Connection" id="12edd974-dc48-4a2f-ac2d-2884d07694cb" source="a0d0c92b-d605-42ad-b0b9-5b9056325161" target="99ef33e3-8478-4dff-8dff-813aefaa729f" archimateRelationship="be59dea4-88c2-454c-a6b8-0bd0cd85629e"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="3ce4ca5f-f97e-4fca-bf27-a11101a49da0" targetConnections="b19620ec-c14d-4fea-8cee-048db47c8f76" font="1|Segoe UI|9.0|1|WINDOWS|1|-12|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" fillColor="#cdcdcd" textPosition="2" archimateElement="81753cdc-0faf-4021-a3d9-f5de61fd1f08" type="1">
           <bounds x="384" y="120" width="156" height="41"/>
@@ -516,7 +516,7 @@ Se deberia siempre utilziar las colas de  mensajeria para intercambio de mensaje
         <content>Diagrama de Comunicación, entre los diferentes elementos de la solución, con Message Delivery Pattern.</content>
       </child>
       <child xsi:type="archimate:DiagramObject" id="074f52ad-03d5-4654-a9f6-a91272994ed8" font="1|Segoe UI|12.0|1|WINDOWS|1|-16|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" textPosition="1" archimateElement="0b376b40-d6fa-4ac7-b30c-493f879c9e10">
-        <bounds x="1320" y="228" width="144" height="36"/>
+        <bounds x="1320" y="228" width="144" height="60"/>
         <sourceConnection xsi:type="archimate:Connection" id="70e8358e-2747-46c3-8028-473b8bad9a98" lineWidth="3" lineColor="#408080" source="074f52ad-03d5-4654-a9f6-a91272994ed8" target="1dd2d56e-c18c-47b5-a2b9-a48a0eba64f5" archimateRelationship="b939e099-42ef-45c3-a7dc-a23fea1cfcde"/>
       </child>
       <child xsi:type="archimate:Note" id="02b21d28-5e00-4b11-a572-5737a1ac9dd6" textAlignment="1">
@@ -524,7 +524,7 @@ Se deberia siempre utilziar las colas de  mensajeria para intercambio de mensaje
         <content>http://racesx07036.demo.sas.com/</content>
       </child>
       <child xsi:type="archimate:DiagramObject" id="b2da4bba-b653-4bf3-bdce-dd49661f67a3" font="1|Segoe UI|12.0|1|WINDOWS|1|-16|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" textPosition="1" archimateElement="286b9b50-1c7b-4de5-81cf-8d8c185f0f05">
-        <bounds x="1320" y="324" width="144" height="31"/>
+        <bounds x="1320" y="324" width="144" height="60"/>
         <sourceConnection xsi:type="archimate:Connection" id="c81d4d9e-63a7-45f4-b320-e6f868501444" lineWidth="3" lineColor="#408080" source="b2da4bba-b653-4bf3-bdce-dd49661f67a3" target="c099e324-0515-4a99-96b5-2a269181f27c" archimateRelationship="c4a5a52e-e893-43d0-9522-cf5703f810df"/>
       </child>
     </element>
